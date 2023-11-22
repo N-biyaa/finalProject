@@ -12,6 +12,7 @@
         <style>
             body{
               background-color:#8196C9;
+              overflow: scroll;
 
 
           }
@@ -50,18 +51,8 @@
               top:24%;
               left:4%;
 
-          }
-          #heading{
-              position:fixed;
-              border-radius: 0px 0px 10px 10px;
-              width:1520px;
-              height:45px;
-              background-color:#dfe9ffe2 ;
-              top:0.0009%;
-              
-
-          }
-
+         }
+         
           .profile{
               position: fixed;
               width:35px;
@@ -75,27 +66,28 @@
 
 
           }
-          .tab1{
+
+          #tab1{
               font-family: "Georgia";
-              font-size: 18px;
+              font-size: 15px;
               color: #192135cd;
               background-color:#a1bfff00;
               border-radius: 10px;
-              border-width: 18px;
+              border-width: 10px;
           }
-          .tab1:hover {
+          #tab1:hover {
               background-color:#a1bfffe2;
               
 
 
           }
-          tab2{
+          #tab2{
               font-family: "Georgia";
-              font-size: 18px;
+              font-size: 15px;
               color: #192135cd;
               background-color:#dfe9ff00;
               border-radius: 10px;
-              border-width: 13px;
+              border-width: 10px;
 
 
           }
@@ -105,56 +97,134 @@
 
 
           }
-          .tab3{
+          #tab3{
               font-family: "Georgia";
-              font-size: 18px;
+              font-size: 15px;
               color: #192135cd;
               background-color:#a1bfff00;
               border-radius: 10px;
-              border-width: 18px;
-
-
-
+              border-width: 10px;
           }
-          .tab3:hover {
+          #tab3:hover {
               background-color:#a1bfffe2;
               
 
 
           }
-          .tab4{
-
-              font-family: "Georgia";
-              font-size: 18px;
-              color: #192135cd;
-              background-color:#a1bfff00;
-              border-radius: 10px;
-              border-width: 18px;
-
-
-
-          }
-          .tab4:hover {
-              background-color:#a1bfffe2;
-              
-
-
-          }
-          .tab5{
+          #tab4{
             font-family: "Georgia";
-              font-size: 18px;
+              font-size: 15px;
               color: #192135cd;
               background-color:#a1bfff00;
               border-radius: 10px;
-              border-width: 18px;
+              border-width: 10px;
 
           }
 
-          .tab5:hover{
+          #tab4:hover{
             background-color:#a1bfffe2;
 
 
           }
+          #tab5{
+
+              font-family: "Georgia";
+              font-size: 15px;
+              color: #192135cd;
+              background-color:#a1bfff00;
+              border-radius: 10px;
+              border-width: 10px;
+
+
+
+          }
+          #tab5:hover {
+              background-color:#a1bfffe2;
+              
+
+
+          }
+         
+          #suby{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 13px;
+            color: #192135cd;
+            background-color: #a1bfffe2;
+            box-shadow: #61729a;
+          }
+          #subs{
+            background-color: #a1bfffe2;
+            color: #192135cd;
+
+
+          }
+          #suby:hover{
+            color: #192135cd;
+            background-color: #a1bfffe2;
+            color: #fff;
+          }
+          #suba{
+            text-wrap: wrap;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+            background-color: #a1bfffe2;
+            border-radius: 10px;
+            width: 500px;
+            height:100px;
+            box-shadow: #61729a;
+            text-align: center;
+          }
+          .glow {
+          font-size: 13px;
+          color:  #192135cd;
+          text-align: center;
+          animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+          from {
+            text-shadow: 0 0 2px rgb(185, 179, 255), 0 0 4px rgb(185, 179, 255), 0 0 6px #aa93ff, 0 0 8px #aa93ff, 0 0 10px #aa93ff, 0 0 12px #aa93ff, 0 0 14px #aa93ff;
+          }
+          
+          to {
+            text-shadow: 0 0 2px rgb(185, 179, 255), 0 0 4px  #d9ceff, 0 0 6px  #d9ceff, 0 0 8px  #d9ceff, 0 0 10px  #d9ceff, 0 0 12px  #d9ceff, 0 0 14px  #d9ceff;
+          }
+        }
+
+        footer{
+          position: fixed;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: 16px;
+          background-color: #2d3a5b;
+          color:#a7bdf5;
+          width: 100%;
+          text-align: center;
+          bottom: 0%;
+          overflow: hidden;
+        }
+
+        #navs{
+          top:0;
+        }
+
+        [data-inviewport="footer"] {
+            opacity: 0;
+        }
+        [data-inviewport="footer"].is-inViewport {
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+          0% {
+              opacity: 0;
+              z-index: 1;
+          }
+
+          100% {
+              opacity: 1;
+              z-index: 1;
+          }
+      }
+
 
         </style>
 
@@ -179,47 +249,61 @@
             <h1>Completed Tasks</h1>
 
         </div>
-        <div id="heading">
 
-
-
-
-        </div>
-        <a href=" "> <img class="profile" src="images\user(1).png" alt="user icon"></a>
-        <nav class="navbar navbar-inverse" style="background-color:#dfe9ffe2;border-color: #8197c900;">
+        
+        <nav class="navbar navbar-inverse" id="navs" style="background-color:#dfe9ffe2;border-color: #8197c900; position: fixed; width: 100%; display: block; transition: top 0.3s;">
             <div class="container-fluid">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:#8196C9;">
+              <div class="navbar-header"> 
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:#8196C9;border-color: #8196c9;">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>                        
                 </button>
-                <a class="navbar-brand" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:24px; color:#192135cd"; >Torra</a>
+                <a class="navbar-brand" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:24px; color:#192135cd; "; >Torra</a>
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                  <li class="tab1 active"><a href="#" >Home</a></li>
+                  <li class="active"><a id="tab1" href="#" >Home</a></li>
                   <li class="dropdown">
                     <a class="dropdown-toggle" id= "tab2" data-toggle="dropdown" href="#" >Themes<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li class="sub-menu"><a href="#">Rainy</a></li>
-                      <li class="sub-menu"><a href="#">Summer</a></li>
-                      <li class="sub-menu"><a href="#">Mango</a></li>
-                      <li class="sub-menu"><a href="#">Watermelon</a></li>
+                    <ul class="dropdown-menu" id="subs">
+                      <li class="sub-menu" id="suby"><a href="#">Rainy</a></li>
+                      <li class="sub-menu" id="suby"><a href="#">Summer</a></li>
+                      <li class="sub-menu" id="suby"><a href="#">Mango</a></li>
+                      <li class="sub-menu" id="suby"><a href="#">Watermelon</a></li>
                     </ul>
                   </li>
-                  <li class="tab3"><a href="#" >About</a></li>
-                  <li class="tab5"><a href="#" >Creator</a></li>
-                  <li class="tab4"><a href="#" >Help?</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" id="tab3" href="#">About<span class="caret"></span></a>
+                    <ul class="dropdown-menu glow" id="suba">Torra is a website designed to be a free and accesible task list organizor. There are 4 unique styles to choose from that can be interchanged! It is the perfect place to list out all your daily repsonsibilites for home, work, school and more!</ul>
+                  </li>
+                  <li class="dropdown" >
+                    <a class="dropdown-toggle" data-toggle="dropdown" id="tab4" href="#">Creator<span class="caret"></span></a>
+                    <ul class="dropdown-menu glow" id="suba">Hello! My name is Nibiya Binu, I am a student NJIT, I am in the Business and Information Systems major! I made this werbsite as a project for my first year website devlopment class! I hope to create a nice enviornment to organize responsibilities and tasks. </ul>     
+                  </li>
+                  <li ><a id="tab5" href="#">Help?</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  <a href=" "> <img class="profile" src="images\user(1).png" alt="user icon"></a>
                 </ul>
               </div>
             </div>
           </nav>
+      <script>
+        const inViewport = (entries, observer) => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+            });
+        };
 
+        const Obs = new IntersectionObserver(inViewport);
+        const obsOptions = {}; // See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+
+        // Attach observer to every [data-inviewport] element:
+        document.querySelectorAll('[data-inviewport]').forEach(el => {
+            Obs.observe(el, obsOptions);
+        });
+      </script>
 
 
 
@@ -231,7 +315,10 @@
     </body>
 
 
-    
+    <footer data-inviewport="footer">
+      <p>&copy Nibiya Binu, 2023</p>
+      <p><a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Becris - Flaticon</a></p>
+    </footer>
 
 
 
