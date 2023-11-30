@@ -217,7 +217,7 @@
           color:#a7bdf5;
           width: 100%;
           text-align: center;
-          bottom: 0%;
+          top: 100%;
         }
       .row{
         position: absolute;
@@ -253,6 +253,46 @@
         width:20px;
         height:20px;
         background: #b0c2eb;
+      }
+      .tasks{
+        position: absolute;
+        top: 20%;
+        left:50%;
+      }
+      .tasks li{
+        list-style: none;
+        font-size: 15px;
+        padding: 12px 8px 12px 45px;
+        user-select: none;
+        cursor:pointer;
+        position: relative;
+
+      }
+      .tasks li::before{
+        content:'';
+        position:absolute;
+        height: 28px; 
+        width: 28px;
+        border-radius: 50%;
+        background-image: url("C:\Users\Taeni\Downloads\umbrella.png");
+        background-size: cover;
+        background-position: center;
+        top: 12px;
+        left: 8px;
+      }
+  
+      
+      .tasks li.checked{
+        color: #2d3a5b;
+        text-decoration: line-through;
+      }
+      .tasks li.checked::before{
+        background-image: url("C:\Users\Taeni\Downloads\umbrella.png");
+        background: #b0c2eb;
+        width: 20px;
+        height: 20px;
+        border-radius: 80px;
+
       }
    
 
@@ -314,13 +354,18 @@
     <body>
       <div class="scroll-br">
         <div class="scroll-div">
-          <div class="tasks">
+          <div >
             <div class="container">
               <img class= "night-girl" src="C:\Users\Taeni\Downloads\Rainy girl (1).png" alt="girl inside a phone booth" styles="float:unset;">
               <div class="row">
                 <input type="text" id="input-box" placeholder="Add task">
                 <button class="add_button"><img src="C:\Users\Taeni\Downloads\plus (2).png" alt="icon of an add sign"></button>
               </div>
+              <ul class="tasks" id="list-container">
+                <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li>
+              </ul>
             </div>
             <img class="vending" src="C:\Users\Taeni\Downloads\Rainy vending machine.png" alt="vending machine on a rainy day" styles="float:unset;">
           </div>
@@ -390,6 +435,7 @@
       <p>&copy Nibiya Binu, 2023</p>
       <p><a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Becris - Flaticon</a>
         <a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by iconmasadepan - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/umbrella" title="umbrella icons">Umbrella icons created by Freepik - Flaticon</a>
     </div>
 
 
