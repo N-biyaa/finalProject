@@ -254,6 +254,12 @@
         height:20px;
         background: #b0c2eb;
       }
+      .add_button img:hover{
+        background: #d4e1ff;
+        border-width: 50px;
+        border-radius: 5px;
+
+      }
       .tasks{
         position: absolute;
         top: 20%;
@@ -274,7 +280,7 @@
         height: 28px; 
         width: 28px;
         border-radius: 50%;
-        background-image: url("C:\Users\Taeni\Downloads\umbrella.png");
+        background-image: url("images\umbrella.png");
         background-size: cover;
         background-position: center;
         top: 12px;
@@ -287,7 +293,7 @@
         text-decoration: line-through;
       }
       .tasks li.checked::before{
-        background-image: url("C:\Users\Taeni\Downloads\umbrella.png");
+        background-image: url("images\umbrella.png");
         background: #b0c2eb;
         width: 20px;
         height: 20px;
@@ -359,14 +365,17 @@
               <img class= "night-girl" src="C:\Users\Taeni\Downloads\Rainy girl (1).png" alt="girl inside a phone booth" styles="float:unset;">
               <div class="row">
                 <input type="text" id="input-box" placeholder="Add task">
-                <button class="add_button"><img src="C:\Users\Taeni\Downloads\plus (2).png" alt="icon of an add sign"></button>
+                <button class="add_button" onclick="addTask()"><img src="C:\Users\Taeni\Downloads\plus (2).png" alt="icon of an add sign"></button>
               </div>
               <ul class="tasks" id="list-container">
-                <li class="checked">Task 1</li>
+                <!--<li class="checked">Task 1</li>
                 <li>Task 2</li>
                 <li>Task 3</li>
-              </ul>
+               </ul> -->
             </div>
+            <script src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\styles\script.js">
+
+            </script>
             <img class="vending" src="C:\Users\Taeni\Downloads\Rainy vending machine.png" alt="vending machine on a rainy day" styles="float:unset;">
           </div>
 
