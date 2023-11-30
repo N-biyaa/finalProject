@@ -12,44 +12,43 @@
         <style>
             body{
               background-color:#8196C9;
-              overflow: scroll;
-
+              overflow: hidden;
+              overflow-y: scroll;
+              overflow-x: scroll;
 
           }
           .night-girl{
-              width:550px;
-              height: 600px;
-              position:fixed;
+              width:40em;
+              height:48em;
+              position:absolute;
               top:10%;
-              left:35%;
+              left:40%;
 
           }
           .vending{
 
-              position:fixed;
-              width:350px;
-              height:450px;
-              top:30%;
-              left:2%;
+              position:absolute;
+              width:30em;
+              height:35em;
+              top:34.5%;
+
           }
 
           #title-box1{
-              position:fixed;
+              position:absolute;
               width:300px;
               height: 30px;
               border-radius: 80px 10px 80px 10px;
-              top:25%;
-              left:2.5%;
+              top:30%;
               background: #dfe9ffe2;
 
           }
           h1{
-              font-size: 15px;
-              position:fixed;
+              font-size: 20px;
+              position:absolute;
               color: #192135cd;
               font-family: "Cursive";
-              top:24%;
-              left:4%;
+              top:28%;
 
          }
          
@@ -58,7 +57,7 @@
               width:35px;
               height:35px;
               left:96%;
-              top:.8%;
+              top:1.5%;
               border-radius: 30px;
           }
           .profile:hover {
@@ -158,11 +157,7 @@
 
 
           }
-          #suby:hover{
-            color: #192135cd;
-            background-color: #a1bfffe2;
-            color: #fff;
-          }
+         
           #suba{
             text-wrap: wrap;
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
@@ -190,17 +185,7 @@
           }
         }
 
-        footer{
-          position: fixed;
-          font-family: Georgia, 'Times New Roman', Times, serif;
-          font-size: 16px;
-          background-color: #2d3a5b;
-          color:#a7bdf5;
-          width: 100%;
-          text-align: center;
-          bottom: 0%;
-          overflow: hidden;
-        }
+        
 
         #navs{
           top:0;
@@ -224,6 +209,91 @@
               z-index: 1;
           }
       }
+      #contianer-ft{
+          position: fixed;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: 16px;
+          background-color: #2d3a5b;
+          color:#a7bdf5;
+          width: 100%;
+          text-align: center;
+          bottom: 0%;
+        }
+      .row{
+        position: absolute;
+        top:13%;
+        left:60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #b0c2eb;
+        border-radius: 30px;
+        padding-left: 20px;
+      }
+      input{
+        flex:1;
+        height: 10px;
+        border:none;
+        outline:none;
+        background:transparent;
+        padding: 10px;
+        font-weight: 14px;
+
+      }
+      .add_button{
+        border:none;
+        outline:none;
+        padding:5px 5px;
+        background: #b0c2eb;
+        color:#fff;
+        cursor:pointer;
+        border-radius: 40px;
+      }
+      .add_button img{
+        width:20px;
+        height:20px;
+        background: #b0c2eb;
+      }
+   
+
+        @media only screen and (max-width:525px){
+          .night-girl{
+              position:absolute;
+              width:33.5em;
+              top:10%;
+              left: 2%;
+          }
+          .vending{
+              position:absolute;
+              width:28em;
+              top:115%;
+
+          }
+
+          #title-box1{
+              position:absolute;
+              width:25%;
+              height: 4%;
+              border-radius: 80px 10px 80px 10px;
+              top:110%;
+              background: #dfe9ffe2;
+
+          }
+          h1{
+              position:absolute;
+              font-size: 1em;
+              color: #192135cd;
+              font-family: "Cursive";
+              top:108%;
+
+          }
+          .profile{
+            left: 78%;
+            top:1.5%;
+          }
+        
+        }
+        
 
 
         </style>
@@ -242,16 +312,29 @@
     </head> 
 
     <body>
-
-        <img class= "night-girl" src="images\Rainy_girl(1).png" alt="girl inside a phone booth">
-        <img class="vending" src="images\Rainy_vending_machine.png" alt="vending machine on a rainy day">
-        <div id="title-box1">
-            <h1>Completed Tasks</h1>
+      <div class="scroll-br">
+        <div class="scroll-div">
+          <div class="tasks">
+            <div class="container">
+              <img class= "night-girl" src="C:\Users\Taeni\Downloads\Rainy girl (1).png" alt="girl inside a phone booth" styles="float:unset;">
+              <div class="row">
+                <input type="text" id="input-box" placeholder="Add task">
+                <button class="add_button"><img src="C:\Users\Taeni\Downloads\plus (2).png" alt="icon of an add sign"></button>
+              </div>
+            </div>
+            <img class="vending" src="C:\Users\Taeni\Downloads\Rainy vending machine.png" alt="vending machine on a rainy day" styles="float:unset;">
+          </div>
 
         </div>
+        
+      </div>
+        
+      <div id="title-box1">
+      </div>
+      <h1>Completed Tasks</h1>
 
         
-        <nav class="navbar navbar-inverse" id="navs" style="background-color:#dfe9ffe2;border-color: #8197c900; position: fixed; width: 100%; display: block; transition: top 0.3s;">
+      <nav class="navbar navbar-inverse" id="navs" style="background-color:#dfe9ffe2;border-color: #8197c900; position: fixed; width: 100%; display: block; transition: top 0.3s;">
             <div class="container-fluid">
               <div class="navbar-header"> 
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:#8196C9;border-color: #8196c9;">
@@ -290,19 +373,7 @@
             </div>
           </nav>
       <script>
-        const inViewport = (entries, observer) => {
-            entries.forEach(entry => {
-                entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
-            });
-        };
-
-        const Obs = new IntersectionObserver(inViewport);
-        const obsOptions = {}; // See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
-
-        // Attach observer to every [data-inviewport] element:
-        document.querySelectorAll('[data-inviewport]').forEach(el => {
-            Obs.observe(el, obsOptions);
-        });
+       
       </script>
 
 
@@ -315,10 +386,11 @@
     </body>
 
 
-    <footer data-inviewport="footer">
+    <div id="container-ft">
       <p>&copy Nibiya Binu, 2023</p>
-      <p><a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Becris - Flaticon</a></p>
-    </footer>
+      <p><a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Becris - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by iconmasadepan - Flaticon</a>
+    </div>
 
 
 
