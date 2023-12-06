@@ -1,108 +1,434 @@
 <html>
     
     <head>
+        <!-- DEVELOPER: Nibiya Binu, IS117-001, Fall 2023 -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+
         <style>
+        /* DEVELOPER Nibiya Binu, IS117-001, Fall 2023 */
             body{
-                background-color:#B0DF97;
+              background-color:rgb(190, 232, 174);
+              overflow: hidden;
+              overflow-y: scroll;
+             
+
+          }
+          .lake{
+              width:40em;
+              height:46.5em;
+              position:absolute;
+              top:10%;
+              left:610px;
+
+          }
+          .boy_lake{
+              position:absolute;
+              width:30em;
+              height:34em;
+              top:34.5%;
+              left:10px;
+
+          }
+
+          #title-box1{
+              position:absolute;
+              width:300px;
+              height: 30px;
+              border-radius: 80px 10px 80px 10px;
+              top:30%;
+              background: #eeffe9e2;
+              left:2.5%;
+
+          }
+          h1{
+              font-size: 20px;
+              position:absolute;
+              color: #192135cd;
+              font-family: "Cursive";
+              top:28%;
+              left:4%;
+
+         }
+         
+          .profile{
+              position: fixed;
+              width:35px;
+              height:35px;
+              left:96%;
+              top:1.5%;
+              border-radius: 30px;
+          }
+          .profile:hover {
+              box-shadow: 2px 2px 5px #433408;
 
 
-            }
-            .lake{
-                width:550px;
-                height: 600px;
-                position:fixed;
-                top:10%;
-                left:35%;
+          }
 
-            }
-            .boy{
-
-                position:fixed;
-                width:350px;
-                height:450px;
-                top:30%;
-                left:2%;
-            }
-
-            #title-box1{
-                position:fixed;
-                width:300px;
-                height: 30px;
-                border-radius: 80px 10px 80px 10px;
-                top:25%;
-                left:2.5%;
-                background: #dcffd5f2;
-            
-            }
-            h2{
-                font-size: 15px;
-                position:fixed;
-                color: #193522e1;
-                font-family: "Cursive";
-                top:24%;
-                left:4%;
-
-            }
-            #heading{
-                position:fixed;
-                border-radius: 0px 0px 10px 10px;
-                width:1520px;
-                height:45px;
-                background-color:#dcffd5f2 ;
-                top:0.0009%;
-                
-
-            }
-
-            .profile{
-                position: fixed;
-                width:35px;
-                height:35px;
-                left:96%;
-                top:.8%;
-            }
-            .tab1{
-                position: fixed;
-                font-family: "Georgia";
-                font-size: 18px;
-                color: #193522e1;
-                left: 2%;
-                border-width:0px ;
-                background-color:#19352200;
-            }
-            .tab2{
-                position: fixed;
-                font-family: "Georgia";
-                font-size: 18px;
-                color: #193522e1;
-                left: 7%;
-                border-width:0px ;
-                background-color:#19352200;
-            
+          #tab1{
+              font-family: "Georgia";
+              font-size: 15px;
+              color: #19351bcd;
+              background-color:#a1bfff00;
+              border-radius: 10px;
+              border-width: 10px;
+          }
+          #tab1:hover {
+              background-color:#b4ffa1e2;
+              
 
 
-            }
-            .tab3{
-                position: fixed;
-                font-family: "Georgia";
-                font-size: 18px;
-                color: #193522e1;
-                left: 13%;
-                border-width:0px ;
-                background-color:#dfe9ff00;
+          }
+          #tab2{
+              font-family: "Georgia";
+              font-size: 15px;
+              color: #19351bcd;
+              background-color:#dfe9ff00;
+              border-radius: 10px;
+              border-width: 10px;
+
+
+          }
+          #tab2:hover {
+              background-color:#b4ffa1e2;
+              
+
+
+          }
+          #tab3{
+              font-family: "Georgia";
+              font-size: 15px;
+              color: #19351bcd;
+              background-color:#a1bfff00;
+              border-radius: 10px;
+              border-width: 10px;
+          }
+          #tab3:hover {
+              background-color:#b4ffa1e2;
+              
+
+
+          }
+          #tab4{
+            font-family: "Georgia";
+              font-size: 15px;
+              color: #19351bcd;
+              background-color:#a1bfff00;
+              border-radius: 10px;
+              border-width: 10px;
+
+          }
+
+          #tab4:hover{
+            background-color:#b4ffa1e2;
+
+
+          }
+          #tab5{
+
+              font-family: "Georgia";
+              font-size: 15px;
+              color: #19351bcd;
+              background-color:#a1bfff00;
+              border-radius: 10px;
+              border-width: 10px;
 
 
 
-            }
-            .tab4{
-                position: fixed;
-                font-family: "Georgia";
-                font-size: 18px;
-                color: #193522e1;
-                left: 18%;
-                border-width:0px ;
-                background-color:#dfe9ff00;
-            }
+          }
+          #tab5:hover {
+              background-color:#b4ffa1e2;
+              
+
+
+          }
+         
+          #suby{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 13px;
+            color: #19351bcd;
+            background-color: #b4ffa1e2;
+            box-shadow: #629a61;
+          }
+          #subs{
+            background-color: #b4ffa1e2;
+            color: #19351bcd;
+
+
+          }
+         
+          #suba{
+            text-wrap: wrap;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+            background-color: #b4ffa1e2;
+            border-radius: 10px;
+            width: 500px;
+            height:100px;
+            box-shadow: #61729a;
+            text-align: center;
+          }
+          .glow {
+          font-size: 13px;
+          color:  #192135cd;
+          text-align: center;
+          animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+          from {
+            text-shadow: 0 0 2px rgb(185, 179, 255), 0 0 4px rgb(185, 179, 255), 0 0 6px #aa93ff, 0 0 8px #aa93ff, 0 0 10px #aa93ff, 0 0 12px #aa93ff, 0 0 14px #aa93ff;
+          }
+          
+          to {
+            text-shadow: 0 0 2px rgb(185, 179, 255), 0 0 4px  #d9ceff, 0 0 6px  #d9ceff, 0 0 8px  #d9ceff, 0 0 10px  #d9ceff, 0 0 12px  #d9ceff, 0 0 14px  #d9ceff;
+          }
+        }
+
+        
+
+        #navs{
+          top:0;
+        }
+
+        @keyframes fadeIn {
+          0% {
+              opacity: 0;
+              z-index: 1;
+          }
+
+          100% {
+              opacity: 1;
+              z-index: 1;
+          }
+      }
+      footer{
+          position: absolute;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          background-color: #dfffe0e2;
+          width: 100%;
+          height: 50px;
+          top: 110%;
+          overflow: hidden;
+        }
+        footer p{
+          color:#315b2d;
+          font-size: 10px;
+          font-weight: bold;
+        }
+        footer a{
+          color:#315b2d;
+          font-size: 10px;
+          font-weight: bold;
+        }
+        footer a:hover{
+          text-decoration: underline;
+        }
+
+      .row{
+        position: absolute;
+        top:15%;
+        left:58%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #eeffe9e2;
+        border-radius: 30px;
+        padding-left: 20px;
+        
+      }
+      input{
+        flex:1;
+        height: 10px;
+        border:none;
+        outline:none;
+        background:transparent;
+        color:rgb(23, 84, 18) ;
+        padding: 10px;
+        font-family:"Comic Sans MS" ;
+
+      }
+      input::placeholder{
+        color:rgba(25, 84, 18, 0.699) ;
+      }
+      .add_button{
+        border:none;
+        outline:none;
+        padding:2px 2px;
+        background: #eeffe9e2;
+        color:#fff;
+        cursor:pointer;
+        border-radius: 40px;
+      }
+      .add_button img{
+        width:20px;
+        height:20px;
+        background: #dfe9ff00;
+        
+      }
+      .add_button:hover{
+        background: #caffb5e2;
+        
+
+      }
+      
+      .tasks{
+        position: absolute;
+        top: 20%;
+        left:50%;
+        width: 390px;
+        height: 560px;
+        overflow-y: scroll;
+
+        
+      }
+      .tasks li{
+        top: 10px;
+        left: 15%;
+        list-style: none;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 12px 8px 12px 45px;
+        user-select: none;
+        color: #edffec;
+        font-family:"Comic Sans MS" ;
+        cursor:pointer;
+        position: relative;
+        max-width: 248px;
+        word-wrap: break-word;
+      }
+      .tasks li::before{
+        content:'';
+        position:absolute;
+        height: 28px; 
+        width: 28px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        top: 12px;
+        left: 8px;
+      }
+  
+      
+      .tasks li img{
+        position: absolute;
+        top:14px;
+        left: 10px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        border-radius: 30px;
+      }
+      .tasks li img:hover{
+        background-color: rgba(242, 255, 243, 0.741);
+      }
+      .completed{
+        text-decoration: line-through;
+        text-decoration-thickness: 2px;
+        text-decoration-color: #699a61;
+
+      }
+      .completed img{
+        -webkit-animation:spin .8s linear;
+        background-color: rgba(242, 255, 243, 0.741);
+      }
+      
+
+      @-moz-keyframes spin { 
+          100% { -moz-transform: rotate(360deg); } 
+      }
+      @-webkit-keyframes spin { 
+          100% { -webkit-transform: rotate(360deg); } 
+      }
+      @keyframes spin { 
+          100% { 
+              -webkit-transform: rotate(360deg); 
+              transform:rotate(360deg); 
+          } 
+      }
+      
+      .tasks li span{
+        position: absolute;
+        left:250px;
+        top: 10px;
+        width:30px;
+        height: 30px;
+        font-size:22px;
+        color:#edffec;
+        line-height:30px;
+        text-align:center;
+      }
+      .tasks li span:hover{
+        background: rgba(197, 235, 176, 0.87);
+        border-radius: 60px;
+      }
+
+        @media only screen and (max-width:798px){
+          body{
+            overflow-x: scroll;
+          }
+          .night-girl{
+              position:absolute;
+              width:33.5em;
+              top:10%;
+              left: 2%;
+          }
+          .vending{
+              position:absolute;
+              width:28em;
+              top:115%;
+
+          }
+
+          footer{
+            top: 190%;
+          }
+
+
+          #title-box1{
+              position:absolute;
+              width:25%;
+              height: 4%;
+              border-radius: 80px 10px 80px 10px;
+              top:110%;
+
+          }
+          h1{
+              position:absolute;
+              font-size: 1em;
+              font-family: "Cursive";
+              top:108%;
+
+          }
+        
+        .profile{
+            left: 78%;
+            top:1.5%;
+          }
+        .row{
+          left: 39%;
+         }
+
+        .tasks{
+          left: 25%;
+          width: 340px;
+        }
+        .tasks li{
+          max-width: 230px;
+        }
+        .tasks li span{
+          left: 230px;
+        }
+
+
+        } 
+      
+        
+
+
         </style>
 
 
@@ -119,27 +445,83 @@
     </head> 
 
     <body>
-
-        <img class= "lake" src= "C:\Users\Taeni\Downloads\Lake (1).png" alt="A summer lake">
-        <img class="boy" src= "C:\Users\Taeni\Downloads\Boy lake (1).png" alt="A boy reading a book on the ground">
-        <div id="title-box1">
-            <h2>Completed Tasks</h2>
+      <div class="scroll-br">
+        <div class="scroll-div">
+          <div >
+            <div class="container">
+              <img class= "lake" src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\images\Lake (1).png" alt="Summer lake view" style="float:unset;">
+              <div class="row">
+                <input type="text" id="input-box" placeholder="Add task">
+                <button class="add_button" onclick="addTask()"><img src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\images\summer_plus.png" alt="icon of an add sign"></button>
+              </div>
+              <ul class="tasks" id="list-container">
+               </ul> 
+            </div>
+            <script src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\styles\script_summer.js"></script>
+            <img class="boy_lake" src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\images\Boy_lake (1).png" alt="A boy resting and reading on the grass" style="float:unset;">
+            <div id="completedTasksContainer"></div>
+          </div>
 
         </div>
-        <div id="heading">
+        
+      </div>
+        
+      <div id="title-box1">
+      </div>
+      <h1>Completed Tasks</h1>
 
-
-
-
-        </div>
-        <a href=" "> <img class="profile" src="C:\Users\Taeni\Downloads\user (1).png" alt="user icon"></a>
-
-        <a href="C:\Users\Taeni\OneDrive\Desktop\Web Dev Files\home_page.html"><button class="tab1" class="click">Home</button> </a> 
-       <a href="C:\Users\Taeni\OneDrive\Desktop\Web Dev Files\theme_page.html"><button class="tab2" class="click">Themes</button> </a> 
-        <button class="tab3" onclick="" class="dropdown">About</button>
-        <button class="tab4" onclick="" class="dropdown">Help</button>
-
-
+        
+      <nav class="navbar navbar-inverse" id="navs" style="background-color:#dfffe0e2;border-color: #8197c900; position: fixed; width: 100%; display: block; transition: top 0.3s;">
+            <div class="container-fluid">
+              <div class="navbar-header"> 
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:#97c981;border-color: #97c981;">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\home_page.html" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:24px; color:#1c3519; "; >Torra</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav" >
+                  <li class="active">
+                    <a id="tab1" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\home_page.html">Home</a></li>
+                  <li class="dropdown hover-dropdown">
+                    <a id= "tab2" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\theme_page.html">Themes<span class="caret"></span></a>
+                    <ul class="dropdown-menu" id="subs">
+                        <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\Rainy_day.html">Rainy</a></li>
+                        <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\summer_day.html">Summer</a></li>
+                        <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\mango_theme.html">Mango</a></li>
+                        <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\watermelon_theme.html">Watermelon</a></li>
+                  </li>
+                  <script>
+                    $(document).ready(function() {
+                      $('.hover-dropdown').hover(function() {
+                        $(this).addClass('open');
+                      }, function() {
+                        $(this).removeClass('open');
+                      });
+                    });
+                  </script>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" id="tab3" href="#">About<span class="caret"></span></a>
+                    <ul class="dropdown-menu glow" id="suba">Torra is a website designed to be a free and accesible task list organizor. There are 4 unique styles to choose from that can be interchanged! It is the perfect place to list out all your daily repsonsibilites for home, work, school and more!</ul>
+                  </li>
+                  <li class="dropdown" >
+                    <a class="dropdown-toggle" data-toggle="dropdown" id="tab4" href="#">Creator<span class="caret"></span></a>
+                    <ul class="dropdown-menu glow" id="suba">Hello! My name is Nibiya Binu, I am a student NJIT, I am in the Business and Information Systems major! I made this werbsite as a project for my first year website devlopment class! I hope to create aethetic enviornment to organize responsibilities and tasks!</ul>     
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" id="tab5" href="#">Help?<span class="caret"></span></a>
+                    <ul class="dropdown-menu glow" id="suba"></ul>     
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <a href=""> <img class="profile" src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\images\user (1).png" alt="user icon"></a>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    
 
 
 
@@ -150,7 +532,13 @@
     </body>
 
 
-    
+    <footer>
+      <p>&copy Nibiya Binu, 2023 | <span><a href="#">Terms of Use | </a></span><span><a href="#">Privacy Policy</a></span></p>
+      <p>Icon Attributions<br><a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Becris - Flaticon | </a> 
+       <span><a href="https://www.flaticon.com/free-icons/plus" title="plus icons">Plus icons created by Freepik - Flaticon</a></span> 
+        <span><a href="https://www.flaticon.com/free-icons/loading" title="loading icons">Loading icons created by Graphics Plazza - Flaticon</a></span>
+        </p>
+      </footer>
 
 
 

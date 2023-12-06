@@ -1,9 +1,6 @@
-<!DOCTYPE html>
 <html>
-  
     
     <head>
-      <!-- DEVELOPER: Nibiya Binu, IS117-001, Fall 2023 -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -12,24 +9,23 @@
         
 
         <style>
-          /* DEVELOPER Nibiya Binu, IS117-001, Fall 2023 */
             body{
-              background-color:rgb(160, 181, 233);
+              background-color:#B0DF97;
               overflow: hidden;
               overflow-y: scroll;
-             
+              overflow-x: scroll;
 
           }
-          .night-girl{
+          .lake{
               width:40em;
               height:46.5em;
-              position:absolute;
+              position:fixed;
               top:10%;
               left:610px;
 
           }
-          .vending{
-              position:absolute;
+          .boy{
+              position:fixed;
               width:30em;
               height:34em;
               top:34.5%;
@@ -43,14 +39,14 @@
               height: 30px;
               border-radius: 80px 10px 80px 10px;
               top:30%;
-              background: #dfe9ffe2;
+              background: #dfffe2e2;
               left:2.5%;
 
           }
           h1{
               font-size: 20px;
               position:absolute;
-              color: #192135cd;
+              color: #193522cd;
               font-family: "Cursive";
               top:28%;
               left:4%;
@@ -74,13 +70,13 @@
           #tab1{
               font-family: "Georgia";
               font-size: 15px;
-              color: #192135cd;
-              background-color:#a1bfff00;
+              color: #193526cd;
+              background-color:#a2ffa100;
               border-radius: 10px;
               border-width: 10px;
           }
           #tab1:hover {
-              background-color:#a1bfffe2;
+              background-color:#a4ffa1e2;
               
 
 
@@ -88,7 +84,7 @@
           #tab2{
               font-family: "Georgia";
               font-size: 15px;
-              color: #192135cd;
+              color: #193526cd;
               background-color:#dfe9ff00;
               border-radius: 10px;
               border-width: 10px;
@@ -96,7 +92,7 @@
 
           }
           #tab2:hover {
-              background-color:#a1bfffe2;
+              background-color:#a4ffa1e2;
               
 
 
@@ -104,13 +100,13 @@
           #tab3{
               font-family: "Georgia";
               font-size: 15px;
-              color: #192135cd;
+              color: #193526cd;
               background-color:#a1bfff00;
               border-radius: 10px;
               border-width: 10px;
           }
           #tab3:hover {
-              background-color:#a1bfffe2;
+              background-color:#a4ffa1e2;
               
 
 
@@ -118,7 +114,7 @@
           #tab4{
             font-family: "Georgia";
               font-size: 15px;
-              color: #192135cd;
+              color: #193526cd;
               background-color:#a1bfff00;
               border-radius: 10px;
               border-width: 10px;
@@ -126,7 +122,7 @@
           }
 
           #tab4:hover{
-            background-color:#a1bfffe2;
+            background-color:#a4ffa1e2;
 
 
           }
@@ -134,7 +130,7 @@
 
               font-family: "Georgia";
               font-size: 15px;
-              color: #192135cd;
+              color: #193526cd;
               background-color:#a1bfff00;
               border-radius: 10px;
               border-width: 10px;
@@ -143,7 +139,7 @@
 
           }
           #tab5:hover {
-              background-color:#a1bfffe2;
+              background-color:#a4ffa1e2;
               
 
 
@@ -152,13 +148,13 @@
           #suby{
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 13px;
-            color: #192135cd;
-            background-color: #a1bfffe2;
-            box-shadow: #61729a;
+            color: #193526cd;
+            background-color: #a1ffb8e2;
+            box-shadow: #619a61;
           }
           #subs{
-            background-color: #a1bfffe2;
-            color: #192135cd;
+            background-color: #a1ffb8e2;
+            color: #193526cd;
 
 
           }
@@ -166,27 +162,27 @@
           #suba{
             text-wrap: wrap;
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-            background-color: #a1bfffe2;
+            background-color: #a1ffb8e2;
             border-radius: 10px;
             width: 500px;
             height:100px;
-            box-shadow: #61729a;
+            box-shadow: #619a61;
             text-align: center;
           }
           .glow {
           font-size: 13px;
-          color:  #192135cd;
+          color:  #193526cd;
           text-align: center;
           animation: glow 1s ease-in-out infinite alternate;
         }
 
         @-webkit-keyframes glow {
           from {
-            text-shadow: 0 0 2px rgb(185, 179, 255), 0 0 4px rgb(185, 179, 255), 0 0 6px #aa93ff, 0 0 8px #aa93ff, 0 0 10px #aa93ff, 0 0 12px #aa93ff, 0 0 14px #aa93ff;
+            text-shadow: 0 0 2px rgb(179, 255, 182), 0 0 4px rgb(179, 255, 182), 0 0 6px #69d77c, 0 0 8px #69d77c, 0 0 10px #69d77c, 0 0 12px #69d77c, 0 0 14px #69d77c;
           }
           
           to {
-            text-shadow: 0 0 2px rgb(185, 179, 255), 0 0 4px  #d9ceff, 0 0 6px  #d9ceff, 0 0 8px  #d9ceff, 0 0 10px  #d9ceff, 0 0 12px  #d9ceff, 0 0 14px  #d9ceff;
+            text-shadow: 0 0 2px rgb(179, 255, 182), 0 0 4px  #ceffd9, 0 0 6px  #ceffd9, 0 0 8px  #ceffd9, 0 0 10px  #ceffd9, 0 0 12px  #ceffd9, 0 0 14px  #ceffd9;
           }
         }
 
@@ -194,6 +190,13 @@
 
         #navs{
           top:0;
+        }
+
+        [data-inviewport="footer"] {
+            opacity: 0;
+        }
+        [data-inviewport="footer"].is-inViewport {
+            animation: fadeIn 1.5s ease-in-out forwards;
         }
 
         @keyframes fadeIn {
@@ -207,29 +210,16 @@
               z-index: 1;
           }
       }
-      footer{
-          position: absolute;
+      #contianer-ft{
+          position: fixed;
           font-family: Georgia, 'Times New Roman', Times, serif;
-          background-color: #dfe9ffe2;
+          font-size: 16px;
+          background-color: #2e5b2d;
+          color:#a7f5b0;
           width: 100%;
-          height: 50px;
-          top: 110%;
-          overflow: hidden;
+          text-align: center;
+          top: 100%;
         }
-        footer p{
-          color:#2d3a5b;
-          font-size: 10px;
-          font-weight: bold;
-        }
-        footer a{
-          color:#2d3a5b;
-          font-size: 10px;
-          font-weight: bold;
-        }
-        footer a:hover{
-          text-decoration: underline;
-        }
-
       .row{
         position: absolute;
         top:15%;
@@ -237,10 +227,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: #dfe9ffe2;
+        background: #b0ebb9;
         border-radius: 30px;
         padding-left: 20px;
-        
       }
       input{
         flex:1;
@@ -248,19 +237,19 @@
         border:none;
         outline:none;
         background:transparent;
-        color:rgb(29, 18, 84) ;
+        color:rgb(32, 84, 18) ;
         padding: 10px;
         font-family:"Comic Sans MS" ;
 
       }
       input::placeholder{
-        color:rgba(29, 18, 84, 0.726) ;
+        color:rgba(18, 84, 38, 0.726) ;
       }
       .add_button{
         border:none;
         outline:none;
-        padding:2px 2px;
-        background: #dfe9ffe2;
+        padding:5px 5px;
+        background: #b3ebb0;
         color:#fff;
         cursor:pointer;
         border-radius: 40px;
@@ -268,24 +257,19 @@
       .add_button img{
         width:20px;
         height:20px;
-        background: #dfe9ff00;
+        background: #b0ebb1;
         
       }
-      .add_button:hover{
-        background: #b5cfffe2;
-        
+      .add_button img:hover{
+        background: #ddffd4;
+        border-width: 50px;
+        border-radius: 5px;
 
       }
-      
       .tasks{
         position: absolute;
         top: 20%;
-        left:50.5%;
-        width: 390px;
-        height: 560px;
-        overflow-y: scroll;
-
-        
+        left:50%;
       }
       .tasks li{
         top: 10px;
@@ -294,14 +278,10 @@
         font-weight: bold;
         padding: 12px 8px 12px 45px;
         user-select: none;
-        color: #e4ecff;
+        color: #cdffcf;
         font-family:"Comic Sans MS" ;
         cursor:pointer;
         position: relative;
-        max-width: 290px;
-        word-wrap: break-word;
-        
-        
 
 
       }
@@ -325,21 +305,17 @@
         width: 20px;
         height: 20px;
         text-align: center;
+        background-color: rgba(227, 255, 222, 0.741);
         border-radius: 30px;
-      }
-
-      .tasks li img:hover{
-        background-color: rgba(244, 240, 255, 0.741);
       }
       .completed{
         text-decoration: line-through;
         text-decoration-thickness: 2px;
-        text-decoration-color: #61729a;
+        text-decoration-color: #639a61;
 
       }
       .completed img{
         -webkit-animation:spin .8s linear;
-        background-color: rgba(244, 240, 255, 0.741);
       }
       
 
@@ -363,19 +339,16 @@
         width:30px;
         height: 30px;
         font-size:22px;
-        color:#e4ecff;
+        color:#c6ffc0;
         line-height:30px;
         text-align:center;
       }
       .tasks li span:hover{
-        background: rgba(176, 194, 235, 0.87);
+        background: rgba(176, 235, 185, 0.87);
         border-radius: 60px;
       }
 
-        @media only screen and (max-width:798px){
-          body{
-            overflow-x: scroll;
-          }
+        @media only screen and (max-width:1250px){
           .night-girl{
               position:absolute;
               width:33.5em;
@@ -389,18 +362,13 @@
 
           }
 
-          footer{
-            top: 190%;
-          }
-
-
           #title-box1{
               position:absolute;
               width:25%;
               height: 4%;
               border-radius: 80px 10px 80px 10px;
               top:110%;
-              background: #dfe9ffe2;
+              background: #dfffe3e2;
 
           }
           h1{
@@ -412,29 +380,14 @@
 
           }
         
-        .profile{
+        
+        }
+        @media only screen and (max-width:770px){
+          .profile{
             left: 78%;
             top:1.5%;
           }
-        .row{
-          left: 39%;
-         }
-
-        .tasks{
-          left: 25%;
-          width: 340px;
-        }
-        .tasks li{
-          max-width: 230px;
-        }
-        .tasks li span{
-          left: 230px;
-        }
-
-
-        } 
-      
-        
+        }  
 
 
         </style>
@@ -457,10 +410,10 @@
         <div class="scroll-div">
           <div >
             <div class="container">
-              <img class= "night-girl" src="C:\Users\Taeni\Downloads\Rainy girl (1).png" alt="girl inside a phone booth" style="float:unset;">
+              <img class= "lake" src= "C:\Users\Taeni\Downloads\Lake (1).png" alt="A summer lake" style="float:unset;">
               <div class="row">
                 <input type="text" id="input-box" placeholder="Add task">
-                <button class="add_button" onclick="addTask()"><img src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\images\rain_plus .png" alt="icon of an add sign"></button>
+                <button class="add_button" onclick="addTask()"><img src="C:\Users\Taeni\Downloads\plus (2).png" alt="icon of an add sign"></button>
               </div>
               <ul class="tasks" id="list-container">
                 <!--<li class="checked">Task 1</li> 
@@ -468,8 +421,8 @@
                 <li>Task 3</li> -->
                </ul> 
             </div>
-            <script src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\styles\script_rain.js"></script>
-            <img class="vending" src="C:\Users\Taeni\Downloads\Rainy vending machine.png" alt="vending machine on a rainy day" style="float:unset;">
+            <script src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\styles\script.js"></script>
+            <img class="boy" src= "C:\Users\Taeni\Downloads\Boy lake (1).png" alt="A boy reading a book on the ground" style="float:unset;">
             <div id="completedTasksContainer"></div>
           </div>
 
@@ -485,50 +438,37 @@
       <nav class="navbar navbar-inverse" id="navs" style="background-color:#dfe9ffe2;border-color: #8197c900; position: fixed; width: 100%; display: block; transition: top 0.3s;">
             <div class="container-fluid">
               <div class="navbar-header"> 
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:#8196C9;border-color: #8196c9;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:#225632e1;border-color: 225632e1;">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>                        
                 </button>
-                <a class="navbar-brand" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\home_page.html" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:24px; color:#192135cd; "; >Torra</a>
+                <a class="navbar-brand" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:24px; color:#192135cd; "; >Torra</a>
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav" >
-                  <li class="active">
-                    <a id="tab1" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\home_page.html">Home</a></li>
-                  <li class="dropdown hover-dropdown">
-                    <a id= "tab2" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\theme_page.html">Themes<span class="caret"></span></a>
+                <ul class="nav navbar-nav">
+                  <li class="active"><a id="tab1" href="#" >Home</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" id= "tab2" data-toggle="dropdown" href="#" >Themes<span class="caret"></span></a>
                     <ul class="dropdown-menu" id="subs">
-                      <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\Rainy_day.html">Rainy</a></li>
-                      <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\summer_day.html">Summer</a></li>
-                      <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\mango_theme.html">Mango</a></li>
-                      <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\watermelon_theme.html">Watermelon</a></li>
+                      <li class="sub-menu" id="suby"><a href="#">Rainy</a></li>
+                      <li class="sub-menu" id="suby"><a href="#">Summer</a></li>
+                      <li class="sub-menu" id="suby"><a href="#">Mango</a></li>
+                      <li class="sub-menu" id="suby"><a href="#">Watermelon</a></li>
                     </ul>
                   </li>
-                  <script>
-                    $(document).ready(function() {
-                      $('.hover-dropdown').hover(function() {
-                        $(this).addClass('open');
-                      }, function() {
-                        $(this).removeClass('open');
-                      });
-                    });
-                  </script>
                   <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" id="tab3" href="#">About<span class="caret"></span></a>
                     <ul class="dropdown-menu glow" id="suba">Torra is a website designed to be a free and accesible task list organizor. There are 4 unique styles to choose from that can be interchanged! It is the perfect place to list out all your daily repsonsibilites for home, work, school and more!</ul>
                   </li>
                   <li class="dropdown" >
                     <a class="dropdown-toggle" data-toggle="dropdown" id="tab4" href="#">Creator<span class="caret"></span></a>
-                    <ul class="dropdown-menu glow" id="suba">Hello! My name is Nibiya Binu, I am a student NJIT, I am in the Business and Information Systems major! I made this werbsite as a project for my first year website devlopment class! I hope to create aethetic enviornment to organize responsibilities and tasks!</ul>     
+                    <ul class="dropdown-menu glow" id="suba">Hello! My name is Nibiya Binu, I am a student NJIT, I am in the Business and Information Systems major! I made this werbsite as a project for my first year website devlopment class! I hope to create a nice enviornment to organize responsibilities and tasks. </ul>     
                   </li>
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" id="tab5" href="#">Help?<span class="caret"></span></a>
-                    <ul class="dropdown-menu glow" id="suba"></ul>     
-                  </li>
+                  <li ><a id="tab5" href="#">Help?</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <a href=""> <img class="profile" src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\images\user (1).png" alt="user icon"></a>
+                  <a href=" "> <img class="profile" src="images\user(1).png" alt="user icon"></a>
                 </ul>
               </div>
             </div>
@@ -544,13 +484,12 @@
     </body>
 
 
-    <footer>
-      <p>&copy Nibiya Binu, 2023 | <span><a href="#">Terms of Use | </a></span><span><a href="#">Privacy Policy</a></span></p>
-      <p>Icon Attributions<br><a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Becris - Flaticon | </a> 
-       <span><a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by iconmasadepan - Flaticon | </a></span> 
-        <span><a href="https://www.flaticon.com/free-icons/loader" title="loader icons"> Loader icons created by Bharat Icons - Flaticon</a></span>
-        </p>
-      </footer>
+    <div id="container-ft">
+      <p>&copy Nibiya Binu, 2023</p>
+      <p><a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Becris - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by iconmasadepan - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/loader" title="loader icons">Loader icons created by Bharat Icons - Flaticon</a>
+    </div>
 
 
 
