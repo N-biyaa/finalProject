@@ -1,152 +1,364 @@
 <html>
     <header>
+        <!-- DEVELOPER: Nibiya Binu, IS117-001, Fall 2023 -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <style>
-             @keyframes fade-in-2{
+        /* DEVELOPER Nibiya Binu, IS117-001, Fall 2023 */
+        
+        @keyframes fade-in-2{
             0%{opacity:0;}
             100%[ opacity:1;]
 
-          }
-          @keyframes animate{
- 
-                100% { 
-                    left: 100%; 
-                } 
+        }
+        @keyframes animate{
+            100% { 
+                left: 100%; 
+            } 
+        }
+        body{
 
-                }
+        background-color: #feefc0;
+        overflow-y: scroll;
+        }
+
+        .h_line1 {
+        position: fixed;
+        width: 800px; 
+        height: 5px; 
+        background: #9C640A; 
+        top: 35%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        animation:fade-in-2 2s .3s both;
+
+        }
+
+        .h_line1::before{
+        position: fixed;
+        content: ""; 
+        top: 0; 
+        left: 0; 
+        width: 10%;
+        height: 100%; 
+        background: #feefc0; 
+        animation: animate 3s .3s both;
+
+        }
+        .rainy{
+        top: 50%;
+        position: fixed;
+        left:30%;
+        width:250px;
+        height: 250px;
+        border: solid 5px #9C640A;
+        animation: fade-in-2 2s .4s both cubic-bezier(0.15, 0, 0.9, 0);
+        }
+        .summer{
+        top: 50%;
+        position: fixed;
+        left:5%;
+        width:300px;
+        height: 250px;
+        border: solid 5px #9C640A;
+        animation: fade-in-2 2s .4s both cubic-bezier(0.15, 0, 0.9, 0);
+
+        } 
+        .mango{
+        top: 50%;
+        position: fixed;
+        left:52%;
+        width:270px;
+        height: 250px;
+        border: solid 5px #9C640A;
+        animation: fade-in-2 2s .4s both cubic-bezier(0.15, 0, 0.9, 0);
+        } 
+        .watermelon{
+        top: 50%;
+        position: fixed;
+        left:75%;
+        width:300px;
+        height: 250px;
+        border: solid 5px#9C640A;
+        animation: fade-in-2 2s .4s both cubic-bezier(0.15, 0, 0.9, 0);
+
+        } 
+
+        h1{
+        font-family: "Cursive";
+        position: fixed;
+        font-size: 80px;
+        color:#9C640A;
+        top:10%;
+        left:38%;
+
+        }
+
+        .profile{
+            position: fixed;
+            width:35px;
+            height:35px;
+            left:96%;
+            top:1.5%;
+            border-radius: 30px;
+            }
+        .profile:hover {
+            box-shadow: 2px 2px 5px #433408;
 
 
+            }
+
+        #tab1{
+            font-family: "Georgia";
+            font-size: 15px;
+            color: #ffe9a1e2;
+            background-color:#a1bfff00;
+            border-radius: 10px;
+            border-width: 10px;
+            }
+            #tab1:hover {
+            background-color:rgba(164, 107, 14, 0.886);
+
+
+
+            }
+        #tab2{
+            font-family: "Georgia";
+            font-size: 15px;
+            color: #ffe9a1e2;
+            background-color:#dfe9ff00;
+            border-radius: 10px;
+            border-width: 10px;
+
+
+            }
+        #tab2:hover {
+            background-color:rgba(164, 107, 14, 0.886);
+
+
+
+            }
+        #tab3{
+            font-family: "Georgia";
+            font-size: 15px;
+            color: #ffe9a1e2;
+            background-color:#a1bfff00;
+            border-radius: 10px;
+            border-width: 10px;
+            }
+        #tab3:hover {
+            background-color:rgba(164, 107, 14, 0.886);
+
+
+
+            }
+        #tab4{
+            font-family: "Georgia";
+            font-size: 15px;
+            color: #ffe9a1e2;
+            background-color:#a1bfff00;
+            border-radius: 10px;
+            border-width: 10px;
+
+            }
+
+        #tab4:hover{
+            background-color:rgba(164, 107, 14, 0.886);
+
+
+            }
+        #tab5{
+
+            font-family: "Georgia";
+            font-size: 15px;
+            color: #ffe9a1e2;
+            background-color:#a1bfff00;
+            border-radius: 10px;
+            border-width: 10px;
+
+
+
+            }
+        #tab5:hover {
+            background-color:rgba(164, 107, 14, 0.886);
+
+            }
+
+        #suby{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 13px;
+            color: #ffe9a1e2;
+            background-color: #ffe9a1e2;
+            box-shadow: rgb(154, 147, 97);
+            }
+        #subs{
+            background-color: #694808;
+            color: #ffe9a1e2;
+
+
+            }
+
+        #suba{
+            text-wrap: wrap;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+            background-color: #ffe9a1e2;
+            border-radius: 10px;
+            width: 500px;
+            height:100px;
+            box-shadow: #9a617d;
+            text-align: center;
+            }
+        .glow {
+            font-size: 13px;
+            color:  rgb(88, 61, 10);
+            text-align: center;
+            animation: glow 1s ease-in-out infinite alternate;
+         }
+
+        @-webkit-keyframes glow {
+            from {
+            text-shadow: 0 0 2px rgb(255, 239, 179), 0 0 4px rgb(255, 239, 179), 0 0 6px #ffd035, 0 0 8px #ffd035, 0 0 10px #ffd035, 0 0 12px #ffd035, 0 0 14px #ffd035;
+            }
+
+            to {
+            text-shadow: 0 0 2px rgb(255, 239, 179), 0 0 4px  #ffeb88, 0 0 6px  #ffeb88, 0 0 8px  #ffeb88, 0 0 10px  #ffeb88, 0 0 12px  #ffeb88, 0 0 14px  #ffeb88;
+            }
+        }
+
+
+
+         #navs{
+            top:0;
+        }
+         @keyframes fadeIn {
+            0% {
+            opacity: 0;
+            z-index: 1;
+            }
+
+            100% {
+            opacity: 1;
+            z-index: 1;
+            }
+        }
+        footer{
+            position: absolute;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #694808;
+            width: 100%;
+            height: 50px;
+            top: 96%;
+            overflow: hidden;
+        }
+        footer p{
+            color:#ffe4a4;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        footer a{
+            color:#ffe4a4;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        footer a:hover{
+            text-decoration: underline;
+        }
+
+        @media only screen and (max-width:798px){
             body{
-                background-color: #feefc0;
-                
-
+                overflow-x: scroll;
             }
-
+            footer{
+                top: 190%;
+            }
             .profile{
-                position: fixed;
-                width:40px;
-                height:40px;
-                left:95%;
-                top:2%;
-                
+                left: 78%;
+                top:1.5%;
             }
 
-          .h_line1 {
-            width: 800px; 
-            height: 5px; 
-            background: #9C640A; 
-            position: absolute; 
-            top: 35%; 
-            left: 50%; 
-            transform: translate(-50%, -50%);
-            animation:fade-in-2 2s .3s both;
-
             }
-
-            .h_line1::before{
-            content: ""; 
-            position: absolute; 
-            top: 0; 
-            left: 0; 
-            width: 10%;
-            height: 100%; 
-            background: #feefc0; 
-            animation: animate 3s .3s both;
-
-            }
-            .rainy{
-            top: 50%;
-            position: fixed;
-            left:30%;
-            width:250px;
-            height: 250px;
-            border: solid 5px #9C640A;
-            animation: fade-in-2 2s .4s both cubic-bezier(0.15, 0, 0.9, 0);
-           }
-           .summer{
-            top: 50%;
-            position: fixed;
-            left:5%;
-            width:300px;
-            height: 250px;
-            border: solid 5px #9C640A;
-            animation: fade-in-2 2s .4s both cubic-bezier(0.15, 0, 0.9, 0);
-
-           } 
-           .mango{
-            top: 50%;
-            position: fixed;
-            left:52%;
-            width:270px;
-            height: 250px;
-            border: solid 5px #9C640A;
-            animation: fade-in-2 2s .4s both cubic-bezier(0.15, 0, 0.9, 0);
-           } 
-           .watermelon{
-            top: 50%;
-            position: fixed;
-            left:75%;
-            width:300px;
-            height: 250px;
-            border: solid 5px#9C640A;
-            animation: fade-in-2 2s .4s both cubic-bezier(0.15, 0, 0.9, 0);
-
-           } 
-
-           h1{
-            font-family: "Cursive";
-            position: fixed;
-            font-size: 80px;
-            color:#9C640A;
-            top:10%;
-            left:38%;
-
-           }
-
-
-
+            aside{
+                left:0;
+                width: 200px;
+                height: 94%;
+                background-color: #9d6900;
+            }  
 
         </style>
-
-
-
-
-
-
     </header>
 
-
     <body>
-
-
-
     <div class="h_line1"> </div>
     <div class="h_line2"> </div>
-
     </div>
     <div class="themes">
-    <a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\Rainy_day.html">  <img class="rainy" src="C:\Users\Taeni\OneDrive\Desktop\Web Dev Files\Rainy_day.jpg" alt="Image of girl in phone booth"> </a>
-    <a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\summer_day.html">  <img class="summer" src="C:\Users\Taeni\OneDrive\Desktop\Web Dev Files\Summer_spring.jpg" alt="Image of a boy reading on the grass near a lake"> </a>
-    <a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\mango_theme.html">  <img class="mango" src="C:\Users\Taeni\OneDrive\Desktop\Web Dev Files\Mango.jpg" alt="Image of boy laying down under a mango tree"> </a>
-    <a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\watermelon_theme.html">  <img class="watermelon" src="C:\Users\Taeni\OneDrive\Desktop\Web Dev Files\Watermelon.jpg" alt="image of a girl riding a bycicle with watermelons"> </a>
+    <a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\Rainy_day.html">  <img class="rainy" src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\images\rain_girl_small.jpg" alt="Image of girl in phone booth"> </a>
+    <a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\summer_day.html">  <img class="summer" src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\images\boy_lake_small.jpg" alt="Image of a boy reading on the grass near a lake"> </a>
+    <a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\mango_theme.html">  <img class="mango" src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\images\Mango_small.jpg" alt="Image of boy laying down under a mango tree"> </a>
+    <a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\watermelon_theme.html">  <img class="watermelon" src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\images\Watermelon_small.jpg" alt="image of a girl riding a bycicle with watermelons"> </a>
     </div>
-
-    
     <h1>~Themes~</h1>
-
- 
-    <a href=" "> <img class="profile" src="C:\Users\Taeni\Downloads\user (1).png" alt="user icon"></a>
-
-
-
-
-
-
-
-
-
+    <nav class="navbar navbar-inverse" id="navs" style="background-color:#694808;border-color: #8197c900; position: fixed; width: 100%; display: block; transition: top 0.3s;">
+        <div class="container-fluid">
+          <div class="navbar-header"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:rgb(174, 124, 24);border-color: rgb(174, 124, 24);">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\home_page.html" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:24px; color:#ffe484; "; >Torra</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav" >
+              <li class="active">
+                <a id="tab1" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\home_page.html">Home</a></li>
+              <li class="dropdown hover-dropdown">
+                <a id= "tab2" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\theme_page.html">Themes<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="subs">
+                    <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\Rainy_day.html">Rainy</a></li>
+                    <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\summer_day.html">Summer</a></li>
+                    <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\mango_theme.html">Mango</a></li>
+                    <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\watermelon_theme.html">Watermelon</a></li>
+                </ul>
+              </li>
+              <script>
+                $(document).ready(function() {
+                  $('.hover-dropdown').hover(function() {
+                    $(this).addClass('open');
+                  }, function() {
+                    $(this).removeClass('open');
+                  });
+                });
+              </script>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" id="tab3" href="#">About<span class="caret"></span></a>
+                <ul class="dropdown-menu glow" id="suba">Torra is a website designed to be a free and accesible task list organizor. There are 4 unique styles to choose from that can be interchanged! It is the perfect place to list out all your daily repsonsibilites for home, work, school and more!</ul>
+              </li>
+              <li class="dropdown" >
+                <a class="dropdown-toggle" data-toggle="dropdown" id="tab4" href="#">Creator<span class="caret"></span></a>
+                <ul class="dropdown-menu glow" id="suba">Hello! My name is Nibiya Binu, I am a student NJIT, I am in the Business and Information Systems major! I made this werbsite as a project for my first year website devlopment class! I hope to create aethetic enviornment to organize responsibilities and tasks!</ul>     
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" id="tab5" href="#">Help<span class="caret"></span></a>
+                <ul class="dropdown-menu glow" id="suba"></ul>     
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <a href=" "> <img class="profile" src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\images\user (1).png" alt="user icon"></a>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </body>
 
-
+    <footer>
+        <p>&copy Nibiya Binu, 2023 | <span><a href="#">Terms of Use | </a></span><span><a href="#">Privacy Policy</a></span></p>
+        <p>Icon Attributions<br><a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Becris - Flaticon | </a> 
+        </p>
+    </footer>
 
 
 
