@@ -1,504 +1,252 @@
 <html>
-    
-    <head>
+    <header>
+        <!-- DEVELOPER: Nibiya Binu, IS117-001, Fall 2023 -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        
-
         <style>
-            body{
-              background-color:#B0DF97;
-              overflow: hidden;
-              overflow-y: scroll;
-              overflow-x: scroll;
+        /* DEVELOPER Nibiya Binu, IS117-001, Fall 2023 */
+    
+        body{
+        background-color: #feefc0;
+        overflow-y: scroll;
+        }
 
-          }
-          .lake{
-              width:40em;
-              height:46.5em;
-              position:fixed;
-              top:10%;
-              left:610px;
+        .profile{
+            position: fixed;
+            width:35px;
+            height:35px;
+            left:96%;
+            top:1.5%;
+            border-radius: 30px;
+            }
+        .profile:hover {
+            box-shadow: 2px 2px 5px #433408;
+            }
 
-          }
-          .boy{
-              position:fixed;
-              width:30em;
-              height:34em;
-              top:34.5%;
-              left:10px;
-
-          }
-
-          #title-box1{
-              position:absolute;
-              width:300px;
-              height: 30px;
-              border-radius: 80px 10px 80px 10px;
-              top:30%;
-              background: #dfffe2e2;
-              left:2.5%;
-
-          }
-          h1{
-              font-size: 20px;
-              position:absolute;
-              color: #193522cd;
-              font-family: "Cursive";
-              top:28%;
-              left:4%;
-
-         }
-         
-          .profile{
-              position: fixed;
-              width:35px;
-              height:35px;
-              left:96%;
-              top:1.5%;
-              border-radius: 30px;
-          }
-          .profile:hover {
-              box-shadow: 2px 2px 5px #433408;
-
-
-          }
-
-          #tab1{
-              font-family: "Georgia";
-              font-size: 15px;
-              color: #193526cd;
-              background-color:#a2ffa100;
-              border-radius: 10px;
-              border-width: 10px;
-          }
-          #tab1:hover {
-              background-color:#a4ffa1e2;
-              
-
-
-          }
-          #tab2{
-              font-family: "Georgia";
-              font-size: 15px;
-              color: #193526cd;
-              background-color:#dfe9ff00;
-              border-radius: 10px;
-              border-width: 10px;
-
-
-          }
-          #tab2:hover {
-              background-color:#a4ffa1e2;
-              
-
-
-          }
-          #tab3{
-              font-family: "Georgia";
-              font-size: 15px;
-              color: #193526cd;
-              background-color:#a1bfff00;
-              border-radius: 10px;
-              border-width: 10px;
-          }
-          #tab3:hover {
-              background-color:#a4ffa1e2;
-              
-
-
-          }
-          #tab4{
+        #tab1{
             font-family: "Georgia";
-              font-size: 15px;
-              color: #193526cd;
-              background-color:#a1bfff00;
-              border-radius: 10px;
-              border-width: 10px;
+            font-size: 15px;
+            color: #ffe9a1e2;
+            background-color:#a1bfff00;
+            border-radius: 10px;
+            border-width: 10px;
+            }
+        #tab1:hover {
+        background-color:rgba(164, 107, 14, 0.886);
 
-          }
+            }
+        #tab2{
+            font-family: "Georgia";
+            font-size: 15px;
+            color: #ffe9a1e2;
+            background-color:#dfe9ff00;
+            border-radius: 10px;
+            border-width: 10px;
 
-          #tab4:hover{
-            background-color:#a4ffa1e2;
+            }
+        #tab2:hover {
+            background-color:rgba(164, 107, 14, 0.886);
 
+            }
+        #tab3{
+            font-family: "Georgia";
+            font-size: 15px;
+            color: #ffe9a1e2;
+            background-color:#a1bfff00;
+            border-radius: 10px;
+            border-width: 10px;
+            }
+        #tab3:hover {
+            background-color:rgba(164, 107, 14, 0.886);
+            }
+        #tab4{
+            font-family: "Georgia";
+            font-size: 15px;
+            color: #ffe9a1e2;
+            background-color:#a1bfff00;
+            border-radius: 10px;
+            border-width: 10px;
 
-          }
-          #tab5{
+            }
+        #tab4:hover{
+            background-color:rgba(164, 107, 14, 0.886);
 
-              font-family: "Georgia";
-              font-size: 15px;
-              color: #193526cd;
-              background-color:#a1bfff00;
-              border-radius: 10px;
-              border-width: 10px;
+            }
+        #tab5{
 
+            font-family: "Georgia";
+            font-size: 15px;
+            color: #ffe9a1e2;
+            background-color:#a1bfff00;
+            border-radius: 10px;
+            border-width: 10px;
 
+            }
+        #tab5:hover {
+            background-color:rgba(164, 107, 14, 0.886);
 
-          }
-          #tab5:hover {
-              background-color:#a4ffa1e2;
-              
-
-
-          }
-         
-          #suby{
+            }
+        #suby{
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 13px;
-            color: #193526cd;
-            background-color: #a1ffb8e2;
-            box-shadow: #619a61;
-          }
-          #subs{
-            background-color: #a1ffb8e2;
-            color: #193526cd;
-
-
-          }
-         
-          #suba{
+            color: #ffe9a1e2;
+            background-color: #ffe9a1e2;
+            box-shadow: rgb(154, 147, 97);
+            }
+        #subs{
+            background-color: #694808;
+            color: #ffe9a1e2;
+            }
+        #suba{
             text-wrap: wrap;
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-            background-color: #a1ffb8e2;
+            background-color: #ffe9a1e2;
             border-radius: 10px;
             width: 500px;
             height:100px;
-            box-shadow: #619a61;
+            box-shadow: #9a617d;
             text-align: center;
-          }
-          .glow {
-          font-size: 13px;
-          color:  #193526cd;
-          text-align: center;
-          animation: glow 1s ease-in-out infinite alternate;
-        }
+            }
+        .glow {
+            font-size: 13px;
+            color:  rgb(88, 61, 10);
+            text-align: center;
+            animation: glow 1s ease-in-out infinite alternate;
+         }
 
         @-webkit-keyframes glow {
-          from {
-            text-shadow: 0 0 2px rgb(179, 255, 182), 0 0 4px rgb(179, 255, 182), 0 0 6px #69d77c, 0 0 8px #69d77c, 0 0 10px #69d77c, 0 0 12px #69d77c, 0 0 14px #69d77c;
-          }
-          
-          to {
-            text-shadow: 0 0 2px rgb(179, 255, 182), 0 0 4px  #ceffd9, 0 0 6px  #ceffd9, 0 0 8px  #ceffd9, 0 0 10px  #ceffd9, 0 0 12px  #ceffd9, 0 0 14px  #ceffd9;
-          }
-        }
+            from {
+            text-shadow: 0 0 2px rgb(255, 239, 179), 0 0 4px rgb(255, 239, 179), 0 0 6px #ffd035, 0 0 8px #ffd035, 0 0 10px #ffd035, 0 0 12px #ffd035, 0 0 14px #ffd035;
+            }
 
-        
+            to {
+            text-shadow: 0 0 2px rgb(255, 239, 179), 0 0 4px  #ffeb88, 0 0 6px  #ffeb88, 0 0 8px  #ffeb88, 0 0 10px  #ffeb88, 0 0 12px  #ffeb88, 0 0 14px  #ffeb88;
+            }
+        }
 
         #navs{
-          top:0;
+            top:0;
         }
-
-        [data-inviewport="footer"] {
+         @keyframes fadeIn {
+            0% {
             opacity: 0;
+            z-index: 1;
+            }
+
+            100% {
+            opacity: 1;
+            z-index: 1;
+            }
         }
-        [data-inviewport="footer"].is-inViewport {
-            animation: fadeIn 1.5s ease-in-out forwards;
+        footer{
+            position: absolute;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #694808;
+            width: 100%;
+            height: 50px;
+            top: 96%;
+            overflow: hidden;
+        }
+        footer p{
+            color:#ffe4a4;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        footer a{
+            color:#ffe4a4;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        footer a:hover{
+            text-decoration: underline;
         }
 
-        @keyframes fadeIn {
-          0% {
-              opacity: 0;
-              z-index: 1;
-          }
+        @media only screen and (max-width:798px){
+            body{
+                overflow-x: scroll;
+            }
+            footer{
+                top: 190%;
+            }
+            .profile{
+                left: 78%;
+                top:1.5%;
+            }
 
-          100% {
-              opacity: 1;
-              z-index: 1;
-          }
-      }
-      #contianer-ft{
-          position: fixed;
-          font-family: Georgia, 'Times New Roman', Times, serif;
-          font-size: 16px;
-          background-color: #2e5b2d;
-          color:#a7f5b0;
-          width: 100%;
-          text-align: center;
-          top: 100%;
-        }
-      .row{
-        position: absolute;
-        top:15%;
-        left:56.5%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: #b0ebb9;
-        border-radius: 30px;
-        padding-left: 20px;
-      }
-      input{
-        flex:1;
-        height: 10px;
-        border:none;
-        outline:none;
-        background:transparent;
-        color:rgb(32, 84, 18) ;
-        padding: 10px;
-        font-family:"Comic Sans MS" ;
-
-      }
-      input::placeholder{
-        color:rgba(18, 84, 38, 0.726) ;
-      }
-      .add_button{
-        border:none;
-        outline:none;
-        padding:5px 5px;
-        background: #b3ebb0;
-        color:#fff;
-        cursor:pointer;
-        border-radius: 40px;
-      }
-      .add_button img{
-        width:20px;
-        height:20px;
-        background: #b0ebb1;
-        
-      }
-      .add_button img:hover{
-        background: #ddffd4;
-        border-width: 50px;
-        border-radius: 5px;
-
-      }
-      .tasks{
-        position: absolute;
-        top: 20%;
-        left:50%;
-      }
-      .tasks li{
-        top: 10px;
-        list-style: none;
-        font-size: 15px;
-        font-weight: bold;
-        padding: 12px 8px 12px 45px;
-        user-select: none;
-        color: #cdffcf;
-        font-family:"Comic Sans MS" ;
-        cursor:pointer;
-        position: relative;
-
-
-      }
-      .tasks li::before{
-        content:'';
-        position:absolute;
-        height: 28px; 
-        width: 28px;
-        border-radius: 50%;
-        background-size: cover;
-        background-position: center;
-        top: 12px;
-        left: 8px;
-      }
-  
-      
-      .tasks li img{
-        position: absolute;
-        top:14px;
-        left: 10px;
-        width: 20px;
-        height: 20px;
-        text-align: center;
-        background-color: rgba(227, 255, 222, 0.741);
-        border-radius: 30px;
-      }
-      .completed{
-        text-decoration: line-through;
-        text-decoration-thickness: 2px;
-        text-decoration-color: #639a61;
-
-      }
-      .completed img{
-        -webkit-animation:spin .8s linear;
-      }
-      
-
-      @-moz-keyframes spin { 
-          100% { -moz-transform: rotate(360deg); } 
-      }
-      @-webkit-keyframes spin { 
-          100% { -webkit-transform: rotate(360deg); } 
-      }
-      @keyframes spin { 
-          100% { 
-              -webkit-transform: rotate(360deg); 
-              transform:rotate(360deg); 
-          } 
-      }
-      
-      .tasks li span{
-        position: absolute;
-        left:300px;
-        top: 10px;
-        width:30px;
-        height: 30px;
-        font-size:22px;
-        color:#c6ffc0;
-        line-height:30px;
-        text-align:center;
-      }
-      .tasks li span:hover{
-        background: rgba(176, 235, 185, 0.87);
-        border-radius: 60px;
-      }
-
-        @media only screen and (max-width:1250px){
-          .night-girl{
-              position:absolute;
-              width:33.5em;
-              top:10%;
-              left: 2%;
-          }
-          .vending{
-              position:absolute;
-              width:28em;
-              top:115%;
-
-          }
-
-          #title-box1{
-              position:absolute;
-              width:25%;
-              height: 4%;
-              border-radius: 80px 10px 80px 10px;
-              top:110%;
-              background: #dfffe3e2;
-
-          }
-          h1{
-              position:absolute;
-              font-size: 1em;
-              color: #192135cd;
-              font-family: "Cursive";
-              top:108%;
-
-          }
-        
-        
-        }
-        @media only screen and (max-width:770px){
-          .profile{
-            left: 78%;
-            top:1.5%;
-          }
-        }  
-
-
+            }
+            aside{
+                left:0;
+                width: 200px;
+                height: 94%;
+                background-color: #9d6900;
+            }  
         </style>
-
-
-
-
-
-
-
-
-
-
-
-
-    </head> 
+    </header>
 
     <body>
-      <div class="scroll-br">
-        <div class="scroll-div">
-          <div >
-            <div class="container">
-              <img class= "lake" src= "C:\Users\Taeni\Downloads\Lake (1).png" alt="A summer lake" style="float:unset;">
-              <div class="row">
-                <input type="text" id="input-box" placeholder="Add task">
-                <button class="add_button" onclick="addTask()"><img src="C:\Users\Taeni\Downloads\plus (2).png" alt="icon of an add sign"></button>
-              </div>
-              <ul class="tasks" id="list-container">
-                <!--<li class="checked">Task 1</li> 
-                <li>Task 2</li>
-                <li>Task 3</li> -->
-               </ul> 
-            </div>
-            <script src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\styles\script.js"></script>
-            <img class="boy" src= "C:\Users\Taeni\Downloads\Boy lake (1).png" alt="A boy reading a book on the ground" style="float:unset;">
-            <div id="completedTasksContainer"></div>
+    <div id="heading"></div>
+    <div class="open">Open Task Lists</div>
+    <nav class="navbar navbar-inverse" id="navs" style="background-color:#694808;border-color: #8197c900; position: fixed; width: 100%; display: block; transition: top 0.3s;">
+        <div class="container-fluid">
+          <div class="navbar-header"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:rgb(174, 124, 24);border-color: rgb(174, 124, 24);">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\home_page.html" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:24px; color:#ffe484; "; >Torra</a>
           </div>
-
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav" >
+              <li class="active">
+                <a id="tab1" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\home_page.html">Home</a></li>
+              <li class="dropdown hover-dropdown">
+                <a id= "tab2" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\theme_page.html">Themes<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="subs">
+                    <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\Rainy_day.html">Rainy</a></li>
+                    <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\summer_day.html">Summer</a></li>
+                    <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\mango_theme.html">Mango</a></li>
+                    <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\watermelon_theme.html">Watermelon</a></li>
+                </ul>
+              </li>
+              <script>
+                $(document).ready(function() {
+                  $('.hover-dropdown').hover(function() {
+                    $(this).addClass('open');
+                  }, function() {
+                    $(this).removeClass('open');
+                  });
+                });
+              </script>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" id="tab3" href="#">About<span class="caret"></span></a>
+                <ul class="dropdown-menu glow" id="suba">Torra is a website designed to be a free and accesible task list organizor. There are 4 unique styles to choose from that can be interchanged! It is the perfect place to list out all your daily repsonsibilites for home, work, school and more!</ul>
+              </li>
+              <li class="dropdown" >
+                <a class="dropdown-toggle" data-toggle="dropdown" id="tab4" href="#">Creator<span class="caret"></span></a>
+                <ul class="dropdown-menu glow" id="suba">Hello! My name is Nibiya Binu, I am a student NJIT, I am in the Business and Information Systems major! I made this werbsite as a project for my first year website devlopment class! I hope to create aethetic enviornment to organize responsibilities and tasks!</ul>     
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" id="tab5" href="#">Help<span class="caret"></span></a>
+                <ul class="dropdown-menu glow" id="suba"></ul>     
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <a href=" "> <img class="profile" src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\images\user (1).png" alt="user icon"></a>
+            </ul>
+          </div>
         </div>
-        
-      </div>
-        
-      <div id="title-box1">
-      </div>
-      <h1>Completed Tasks</h1>
-
-        
-      <nav class="navbar navbar-inverse" id="navs" style="background-color:#dfe9ffe2;border-color: #8197c900; position: fixed; width: 100%; display: block; transition: top 0.3s;">
-            <div class="container-fluid">
-              <div class="navbar-header"> 
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:#225632e1;border-color: 225632e1;">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>                        
-                </button>
-                <a class="navbar-brand" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:24px; color:#192135cd; "; >Torra</a>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                  <li class="active"><a id="tab1" href="#" >Home</a></li>
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" id= "tab2" data-toggle="dropdown" href="#" >Themes<span class="caret"></span></a>
-                    <ul class="dropdown-menu" id="subs">
-                      <li class="sub-menu" id="suby"><a href="#">Rainy</a></li>
-                      <li class="sub-menu" id="suby"><a href="#">Summer</a></li>
-                      <li class="sub-menu" id="suby"><a href="#">Mango</a></li>
-                      <li class="sub-menu" id="suby"><a href="#">Watermelon</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" id="tab3" href="#">About<span class="caret"></span></a>
-                    <ul class="dropdown-menu glow" id="suba">Torra is a website designed to be a free and accesible task list organizor. There are 4 unique styles to choose from that can be interchanged! It is the perfect place to list out all your daily repsonsibilites for home, work, school and more!</ul>
-                  </li>
-                  <li class="dropdown" >
-                    <a class="dropdown-toggle" data-toggle="dropdown" id="tab4" href="#">Creator<span class="caret"></span></a>
-                    <ul class="dropdown-menu glow" id="suba">Hello! My name is Nibiya Binu, I am a student NJIT, I am in the Business and Information Systems major! I made this werbsite as a project for my first year website devlopment class! I hope to create a nice enviornment to organize responsibilities and tasks. </ul>     
-                  </li>
-                  <li ><a id="tab5" href="#">Help?</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                  <a href=" "> <img class="profile" src="images\user(1).png" alt="user icon"></a>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    
-
-
-
-
-
-
-
+      </nav>
     </body>
 
-
-    <div id="container-ft">
-      <p>&copy Nibiya Binu, 2023</p>
-      <p><a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Becris - Flaticon</a>
-        <a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by iconmasadepan - Flaticon</a>
-        <a href="https://www.flaticon.com/free-icons/loader" title="loader icons">Loader icons created by Bharat Icons - Flaticon</a>
-    </div>
-
-
-
-
-
-
-
-
-
+    <footer>
+        <p>&copy Nibiya Binu, 2023 | <span><a href="#">Terms of Use | </a></span><span><a href="#">Privacy Policy</a></span></p>
+        <p>Icon Attributions<br><a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Becris - Flaticon | </a> 
+        </p>
+    </footer>
 
 
 
@@ -508,46 +256,3 @@
 
 
 </html>
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

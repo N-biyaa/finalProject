@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     
     <head>
@@ -180,11 +181,11 @@
 
         @-webkit-keyframes glow {
           from {
-            text-shadow: 0 0 2px rgb(185, 179, 255), 0 0 4px rgb(185, 179, 255), 0 0 6px #aa93ff, 0 0 8px #aa93ff, 0 0 10px #aa93ff, 0 0 12px #aa93ff, 0 0 14px #aa93ff;
+            text-shadow: 0 0 2px rgb(119, 204, 111), 0 0 4px rgb(119, 204, 111), 0 0 6px #2a971b 0 0 8px #2a971b 0 0 10px #2a971b, 0 0 12px #2a971b, 0 0 14px #2a971b;
           }
           
           to {
-            text-shadow: 0 0 2px rgb(185, 179, 255), 0 0 4px  #d9ceff, 0 0 6px  #d9ceff, 0 0 8px  #d9ceff, 0 0 10px  #d9ceff, 0 0 12px  #d9ceff, 0 0 14px  #d9ceff;
+            text-shadow: 0 0 2px rgb(119, 204, 111), 0 0 4px  #f2ffef, 0 0 6px  #f2ffef, 0 0 8px  #f2ffef, 0 0 10px  #f2ffef, 0 0 12px  #f2ffef, 0 0 14px  #f2ffef;
           }
         }
 
@@ -480,46 +481,47 @@
                   <span class="icon-bar"></span>                        
                 </button>
                 <a class="navbar-brand" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\home_page.html" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:24px; color:#1c3519; "; >Torra</a>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav" >
-                  <li class="active">
-                    <a id="tab1" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\home_page.html">Home</a></li>
-                  <li class="dropdown hover-dropdown">
-                    <a id= "tab2" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\theme_page.html">Themes<span class="caret"></span></a>
-                    <ul class="dropdown-menu" id="subs">
-                        <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\Rainy_day.html">Rainy</a></li>
-                        <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\summer_day.html">Summer</a></li>
-                        <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\mango_theme.html">Mango</a></li>
-                        <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\watermelon_theme.html">Watermelon</a></li>
-                  </li>
-                  <script>
-                    $(document).ready(function() {
-                      $('.hover-dropdown').hover(function() {
-                        $(this).addClass('open');
-                      }, function() {
-                        $(this).removeClass('open');
-                      });
-                    });
-                  </script>
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" id="tab3" href="#">About<span class="caret"></span></a>
-                    <ul class="dropdown-menu glow" id="suba">Torra is a website designed to be a free and accesible task list organizor. There are 4 unique styles to choose from that can be interchanged! It is the perfect place to list out all your daily repsonsibilites for home, work, school and more!</ul>
-                  </li>
-                  <li class="dropdown" >
-                    <a class="dropdown-toggle" data-toggle="dropdown" id="tab4" href="#">Creator<span class="caret"></span></a>
-                    <ul class="dropdown-menu glow" id="suba">Hello! My name is Nibiya Binu, I am a student NJIT, I am in the Business and Information Systems major! I made this werbsite as a project for my first year website devlopment class! I hope to create aethetic enviornment to organize responsibilities and tasks!</ul>     
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" id="tab5" href="#">Help?<span class="caret"></span></a>
-                    <ul class="dropdown-menu glow" id="suba"></ul>     
-                  </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                  <a href=""> <img class="profile" src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\images\user (1).png" alt="user icon"></a>
-                </ul>
-              </div>
             </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav" >
+                <li class="active">
+                  <a id="tab1" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\home_page.html">Home</a></li>
+                <li class="dropdown hover-dropdown">
+                  <a id= "tab2" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\theme_page.html">Themes<span class="caret"></span></a>
+                  <ul class="dropdown-menu" id="subs">
+                    <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\Rainy_day.html">Rainy</a></li>
+                    <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\summer_day.html">Summer</a></li>
+                    <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\mango_theme.html">Mango</a></li>
+                    <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\watermelon_theme.html">Watermelon</a></li>
+                  </ul>
+                </li>
+                <script>
+                  $(document).ready(function() {
+                    $('.hover-dropdown').hover(function() {
+                      $(this).addClass('open');
+                    }, function() {
+                      $(this).removeClass('open');
+                    });
+                  });
+                </script>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" id="tab3" href="#">About<span class="caret"></span></a>
+                  <ul class="dropdown-menu glow" id="suba">Torra is a website designed to be a free and accesible task list organizor. There are 4 unique styles to choose from that can be interchanged! It is the perfect place to list out all your daily repsonsibilites for home, work, school and more!</ul>
+                </li>
+                <li class="dropdown" >
+                  <a class="dropdown-toggle" data-toggle="dropdown" id="tab4" href="#">Creator<span class="caret"></span></a>
+                  <ul class="dropdown-menu glow" id="suba">Hello! My name is Nibiya Binu, I am currently studying at NJIT, and I am in the Business and Information Systems major! I made this website as a project for my first year website devlopment class! I hope to create aesthetic enviornment to organize responsibilities and tasks!</ul>     
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" id="tab5" href="#">Help?<span class="caret"></span></a>
+                  <ul class="dropdown-menu glow" id="suba"></ul>     
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\contact_page.html"> <img class="profile" src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\images\user (1).png" alt="user icon"></a>
+              </ul>
+            </div>
+          </div>
           </nav>
     
 

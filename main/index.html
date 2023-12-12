@@ -1,8 +1,12 @@
+<!DOCTYPE html>
 <html>
-
-
     <head>
+        <!-- DEVELOPER: Nibiya Binu, IS117-001, Fall 2023 -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <style>
+        /* DEVELOPER Nibiya Binu, IS117-001, Fall 2023 */
             @keyframes fade-in{
                 100%{
                     opacity: 1;
@@ -11,9 +15,6 @@
             
             }
             
-
-
-            
              
             body{
                 background-color: #feefc0;
@@ -21,15 +22,14 @@
                 
             }
             
-
-    
-
            img {
             position:fixed;
 
             }     
             main{
-                font-size: 3rem;
+                position: relative;
+                top:10%;
+                font-size: 100px;
                 max-width: 200px;
                 margin:auto;
                 color: #9C640A;
@@ -72,13 +72,15 @@
             }
             
             .typer h1{
-            position: relative;
-            width: 45%;
+            position: absolute;
+            width: 60%;
+            left:21%;
+            top: 15%;
             height: auto;
             text-size-adjust: auto;
             font-family: monospace;
             color:#9C640A;
-            font-size: 1.2rem;
+            font-size: 2.5rem;
             overflow:hidden;
             white-space: nowrap;
             border-right: .15em solid #9C640A;
@@ -89,7 +91,7 @@
             
             @keyframes typing {
             from { width: 0 }
-            to { width: 45% }
+            to { width: 60% }
             }
             @keyframes fade-in-2{
                 0%{opacity:0;}
@@ -161,8 +163,19 @@
 
 
             }
+            .profile{
+              position: fixed;
+              width:35px;
+              height:35px;
+              left:96%;
+              top:1.5%;
+              border-radius: 30px;
+          }
+          .profile:hover {
+              box-shadow: 2px 2px 5px #433408;
 
 
+          }
 
             .foot{
                 display: block;
@@ -176,22 +189,27 @@
 
 
             }
+            footer{
+            position: absolute;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #694808;
+            width: 100%;
+            height: 50px;
+            top: 96%;
+            overflow: hidden;
+            }
+         footer p{
+            color:#ffe4a4;
+            font-size: 10px;
+            font-weight: bold;
+            }
+         footer a{
+            color:#ffe4a4;
+            font-size: 10px;
+            font-weight: bold;
+            }
             
-            
-                
-
-
-           
         </style>
-               
-        
-        
-              
-
-
-
-
-
 
     </head>
 
@@ -219,44 +237,22 @@
         
         <div class="h_line"> </div>
        
-        <a href="C:\Users\Taeni\OneDrive\Desktop\Web Dev Files\theme_page.html"><button class="enter">Begin</button></a>
-       
+        <a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\home_page.html"><button class="enter">Begin</button></a>
+        
 
        </div>
-       
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
+       <div>
+        <ul class="nav navbar-nav navbar-right">
+            <a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\contact_page.html"> <img class="profile" src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\images\user (1).png" alt="user icon"></a>
+        </ul>
+       </div>
+   
     </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <footer>
+        <p>&copy Nibiya Binu, 2023 | <span><a href="#">Terms of Use | </a></span><span><a href="#">Privacy Policy</a></span></p>
+        <p>Icon Attributions<br><a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Becris - Flaticon | </a> 
+          </p>
+    </footer>
+  
 
 </html>

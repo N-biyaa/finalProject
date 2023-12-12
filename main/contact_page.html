@@ -2,101 +2,295 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My First Bootstrap 4 Page</title>
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-          crossorigin="anonymous">
-    <link href="css/main.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+
+        background-color: #feefc0;
+        overflow-y: scroll;
+        }
+        .profile{
+        position: fixed;
+        width:35px;
+        height:35px;
+        left:96%;
+        top:1.5%;
+        border-radius: 30px;
+        }
+        .profile:hover {
+        box-shadow: 2px 2px 5px #433408;
+        }
+        #tab1{
+        font-family: "Georgia";
+        font-size: 15px;
+        color: #ffe9a1e2;
+        background-color:#a1bfff00;
+        border-radius: 10px;
+        border-width: 10px;
+        }
+        #tab1:hover {
+        background-color:rgba(164, 107, 14, 0.886);
+
+        }
+        #tab2{
+        font-family: "Georgia";
+        font-size: 15px;
+        color: #ffe9a1e2;
+        background-color:#dfe9ff00;
+        border-radius: 10px;
+        border-width: 10px;
+
+        }
+        #tab2:hover {
+        background-color:rgba(164, 107, 14, 0.886);
+
+        }
+        #tab3{
+        font-family: "Georgia";
+        font-size: 15px;
+        color: #ffe9a1e2;
+        background-color:#a1bfff00;
+        border-radius: 10px;
+        border-width: 10px;
+        }
+        #tab3:hover {
+        background-color:rgba(164, 107, 14, 0.886);
+        }
+        #tab4{
+        font-family: "Georgia";
+        font-size: 15px;
+        color: #ffe9a1e2;
+        background-color:#a1bfff00;
+        border-radius: 10px;
+        border-width: 10px;
+
+        }
+        #tab4:hover{
+        background-color:rgba(164, 107, 14, 0.886);
+
+        }
+        #tab5{
+
+        font-family: "Georgia";
+        font-size: 15px;
+        color: #ffe9a1e2;
+        background-color:#a1bfff00;
+        border-radius: 10px;
+        border-width: 10px;
+
+        }
+        #tab5:hover {
+        background-color:rgba(164, 107, 14, 0.886);
+
+        }
+        #suby{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 13px;
+        color: #ffe9a1e2;
+        background-color: #ffe9a1e2;
+        box-shadow: rgb(154, 147, 97);
+        }
+        #subs{
+        background-color: #694808;
+        color: #ffe9a1e2;
+        }
+        #suba{
+        text-wrap: wrap;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        background-color: #ffe9a1e2;
+        border-radius: 10px;
+        width: 500px;
+        height:100px;
+        box-shadow: #9a617d;
+        text-align: center;
+        }
+        .glow {
+        font-size: 13px;
+        color:  rgb(88, 61, 10);
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+        from {
+        text-shadow: 0 0 2px rgb(255, 239, 179), 0 0 4px rgb(255, 239, 179), 0 0 6px #ffd035, 0 0 8px #ffd035, 0 0 10px #ffd035, 0 0 12px #ffd035, 0 0 14px #ffd035;
+        }
+
+        to {
+        text-shadow: 0 0 2px rgb(255, 239, 179), 0 0 4px  #ffeb88, 0 0 6px  #ffeb88, 0 0 8px  #ffeb88, 0 0 10px  #ffeb88, 0 0 12px  #ffeb88, 0 0 14px  #ffeb88;
+        }
+        }
+
+        #navs{
+        top:0;
+        }
+        @keyframes fadeIn {
+        0% {
+        opacity: 0;
+        z-index: 1;
+        }
+
+        100% {
+        opacity: 1;
+        z-index: 1;
+        }
+        }
+        footer{
+        position: absolute;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: #694808;
+        width: 100%;
+        height: 50px;
+        top: 96%;
+        overflow: hidden;
+        }
+        footer p{
+        color:#ffe4a4;
+        font-size: 10px;
+        font-weight: bold;
+        }
+        footer a{
+        color:#ffe4a4;
+        font-size: 10px;
+        font-weight: bold;
+        }
+        footer a:hover{
+        text-decoration: underline;
+        }
+       .contact{
+        display: flex;
+        justify-content: center;
+       }
+        #primary{
+            position:absolute;
+            top: 25%;
+            width: 300px;
+        }
+        #primary small{
+            color: black;
+        }
+        #secondary{
+            position:absolute;
+            top: 40%;
+            width: 300px;
+        }
+        #check{
+            position:absolute;
+            top: 50%;
+        }
+        #complete{
+            position:absolute;
+            top: 55%;
+            background-color: #694808;
+            border-color: #43340800;
+
+        }
+        #complete:hover{
+            background-color: #9c6903;
+        }
+        .blurred{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 15%;
+            left: 30%;
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+            z-index: -1;
+            width: 600px;
+            height: 400px;
+
+        }
+        @media only screen and (max-width:798px){
+                .blurred{
+                    left: 40%;
+                    top: 23%;
+                    width: 100px;
+                    height: 320px;
+                }
+            
+            }
+    </style>
 </head>
 <body>
-<div class="container-fluid">
-    <div class="row">
-        <nav class="navbar navbar-expand-md
-                    justify-content-start
-                    bg-dark navbar-dark
-                    col-12">
-
-            <!-- Brand -->
-            <a class="navbar-brand" href="#">Logo</a>
-            <!-- Responsive Button for the smaller menu -->
-            <button class="navbar-toggler" type="button"
-                    data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <!-- Links -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link 2</a>
-                    </li>
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
-                           data-toggle="dropdown">
-                            Dropdown link
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Link 1</a>
-                            <a class="dropdown-item" href="#">Link 2</a>
-                            <a class="dropdown-item" href="#">Link 3</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-    </div>
-    <div class="container">
-    <div class="row">
-        <form action="">
-            <div class="form-group">
-                <label for="firstname">First Name:</label>
-                <input type="text" class="form-control" id="firstname"
-                       placeholder="First name" name="firstname">
-            </div>
-            <div class="form-group">
-                <label for="lastname">Last Name:</label>
-                <input type="text" class="form-control" id="lastname"
-                       placeholder="Last name" name="lastname">
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email"
-                       placeholder="Enter email" name="email">
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input"
-                           type="checkbox" name="subscribe"> Subscribe
-                </label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-    </div>
-    <footer class="footer page-footer font-small ">
-        <div class="container">
-            <div class="row">
-                <span class="text-muted">&copy; Art Hendela, 2020 |  Terms Of Use  |  Privacy Statement</span>
-            </div>
+    <form class="contact">
+        <div class="form-group" id="primary">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
-    </footer>
-</div>
-
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+        <div class="form-group" id="secondary">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check" id="check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Keep me signed in</label>
+        </div>
+        <button type="submit" class="btn btn-primary" id="complete">Submit</button>
+      </form>
+      <div class="blurred">
+        <img src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\images\Bear (1).png" alt="Bear on a moon background"/>
+      </div>
+      <nav class="navbar navbar-inverse" id="navs" style="background-color:#694808;border-color: #8197c900; position: fixed; width: 100%; display: block; transition: top 0.3s;">
+        <div class="container-fluid">
+          <div class="navbar-header"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:rgb(174, 124, 24);border-color: rgb(174, 124, 24);">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\home_page.html" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:24px; color:#ffe484; "; >Torra</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav" >
+              <li class="active">
+                <a id="tab1" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\home_page.html">Home</a></li>
+              <li class="dropdown hover-dropdown">
+                <a id= "tab2" href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\theme_page.html">Themes<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="subs">
+                    <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\Rainy_day.html">Rainy</a></li>
+                    <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\summer_day.html">Summer</a></li>
+                    <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\mango_theme.html">Mango</a></li>
+                    <li class="sub-menu" id="suby"><a href="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\main\watermelon_theme.html">Watermelon</a></li>
+                </ul>
+              </li>
+              <script>
+                $(document).ready(function() {
+                  $('.hover-dropdown').hover(function() {
+                    $(this).addClass('open');
+                  }, function() {
+                    $(this).removeClass('open');
+                  });
+                });
+              </script>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" id="tab3" href="#">About<span class="caret"></span></a>
+                <ul class="dropdown-menu glow" id="suba">Torra is a website designed to be a free and accesible task list organizor. There are 4 unique styles to choose from that can be interchanged! It is the perfect place to list out all your daily repsonsibilites for home, work, school and more!</ul>
+              </li>
+              <li class="dropdown" >
+                <a class="dropdown-toggle" data-toggle="dropdown" id="tab4" href="#">Creator<span class="caret"></span></a>
+                <ul class="dropdown-menu glow" id="suba">Hello! My name is Nibiya Binu, I am currently studying at NJIT, and I am in the Business and Information Systems major! I made this website as a project for my first year website devlopment class! I hope to create aesthetic enviornment to organize responsibilities and tasks!</ul>     
+            </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" id="tab5" href="#">Help<span class="caret"></span></a>
+                <ul class="dropdown-menu glow" id="suba"></ul>     
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <a href=" "> <img class="profile" src="C:\Users\Taeni\OneDrive\Documents\GitHub\finalProject\images\user (1).png" alt="user icon"></a>
+            </ul>
+          </div>
+        </div>
+      </nav>
 </body>
+<footer>
+    <p>&copy Nibiya Binu, 2023 | <span><a href="#">Terms of Use | </a></span><span><a href="#">Privacy Policy</a></span></p>
+    <p>Icon Attributions<br><a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Becris - Flaticon | </a> 
+    </p>
+</footer>
 </html>
