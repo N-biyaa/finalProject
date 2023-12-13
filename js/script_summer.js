@@ -1,3 +1,4 @@
+/* DEVELOPER Nibiya Binu, IS117-001, Fall 2023 */
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 
