@@ -9,7 +9,7 @@ function addTask() {
         li.innerHTML = inputBox.value;
 
         let img = document.createElement("img");
-        img.src = "C:/Users/Taeni/OneDrive/Documents/GitHub/finalProject/images/Watermelon_loading.png";
+        img.src = "../images/Watermelon_loading.png";
 
         li.appendChild(img);
 
